@@ -1,0 +1,292 @@
+﻿body {
+    min-height: 100%;
+    height: 100%;
+}
+
+.BgPic {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../Content/Image/Villa-20-bedroom-2.jpg);
+    filter: blur(5px);
+    transform: scale(1.2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.confirmedDiv {
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 500px;
+    background-color: white;
+    border: #f2e6cf solid 2px;
+    box-shadow: black 2px 2px 4px 0px;
+    margin: 300px auto;
+}
+
+.confirmedDiv p, a {
+    text-align:center;
+}
+
+.headtitle {
+    position: relative;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+    border: black solid 2px;
+    font-weight: 300;
+    color: black;
+    background-color: #ffffff80;
+}
+
+
+.container-fluid {
+    position: absolute;
+    top: 130px;
+    background-color: #ffffffa1;
+    box-shadow: 0px 0px 10px 10px #ffffffa1;
+}
+
+.menuClass {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.menuButton {
+    position: relative;
+    border-radius: 0 !important;
+    padding: 10px 40px !important;
+    font-size: 18px;
+}
+
+.navBar {
+    position: fixed;
+    display: block;
+    top: -150px;
+    height: 0px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+    .navBar div {
+        margin-top: 50px;
+        padding: 0px 100px;
+    }
+
+    .navBar a {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .navBar i {
+        position: relative;
+        color: black;
+        cursor: pointer;
+        font-size: 30px;
+        float: right;
+    }
+
+.checkButtonList {
+    margin: auto;
+}
+
+    .checkButtonList input {
+        transform: scale(3);
+        margin: 15px 30% 0px;
+        color: white;
+    }
+
+    .checkButtonList label {
+        /*margin-left: 25%;*/
+        margin-top: 15px;
+        /*margin-top:10px;*/
+    }
+
+.calendar table {
+    margin: auto;
+    text-align: center;
+}
+
+.calendar h3 {
+    text-align: center;
+}
+
+.row-center {
+    margin: auto;
+    max-width: 300px;
+}
+
+.informationBox {
+    text-align: center;
+}
+
+    .informationBox input {
+        margin: auto;
+        width: 70%;
+        height: 30%;
+        max-width: 70%;
+        min-width: 150px;
+    }
+
+.btn {
+    border-radius: 0px;
+    padding: 5px 20px;
+    background-color: white;
+}
+
+.scrollmekanik {
+    overflow-y: scroll;
+    height: 660px;
+}
+
+/*Room Card Design*/
+.roomCard {
+    width: 90%;
+    margin: 0 20px;
+    margin-top: 40px;
+    text-align: center;
+    height: 120px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 0;
+    box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 1);
+    position: relative;
+    min-width: 400px;
+}
+
+
+.roomCardImage {
+    width: 170px;
+    margin-right: 100%;
+    margin-left: -30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.roomCardInformation {
+    position: absolute;
+    top: 0;
+    margin-left: 150px;
+    margin-top: 10px;
+    text-align: start;
+}
+
+    .roomCardInformation p {
+        font-size: 20px;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        text-align: start;
+    }
+
+.roomCardBTN {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid black;
+    text-align: center;
+}
+
+.roomCardBTN a:hover {
+    background-color: #578AFF;
+}
+
+.roomCardBTN a {
+    display: table-cell;
+    height: 120px;
+    width: 85px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: #C7DFFF;
+    font-weight: 600;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+
+
+
+
+/*CheckBox Design*/
+
+.CheckBoxDiv{
+    margin-top: 25px;
+    text-align:center;
+}
+
+.InputContainer {
+    /*display: block;*/
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .InputContainer input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .InputContainer span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #C7DFFF;
+        border-radius: 2px;
+        box-shadow: 0px 0px 1px 0px black;
+    }
+
+    .InputContainer:hover input ~ span {
+        background-color: #ABCCFF;
+    }
+
+    .InputContainer input:checked ~ span {
+        background-color: #578AFF;
+    }
+
+    .InputContainer span:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .InputContainer input:checked ~ span:after {
+        display: block;
+    }
+
+    .InputContainer span:after {
+        left: 9px;
+        top: 5px;
+        width: 7px;
+        height: 13px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+/*CheckBox Design End*/
