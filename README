@@ -1,0 +1,3 @@
+Invoice sender bliver brugt til at sende faktura til de reservationer der bliver oprettet.
+Under release mappen i Landlyst-ZBC/LandLystLibrary/Landlyst Final/Invoice Sender 17062020/Invoice Sender 17062020/bin/Release/
+Er der en config fil du kan redigere for at ændre stien til faktura filen 
